@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: linear-gradient(90deg, #24252A 0%,#24252A 30% ,#034a5c 10%,#034a5c 20%,#034a5c 30%,#034a5c 40%, #034a5c 100%);
+}
+/*-----------------------------------------------------------------NAV BAR-----------------------------------------------------------------*/
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 5%;
+}
+.logo{
+    cursor: pointer;
+    max-width: 55px;
+    cursor: pointer;
+    margin-right: auto;
+}
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+.nav-links{
+    list-style: none;    
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0 8px;
+}
+
+.nav-links li a{
+    transition:  all 0.3s ease 0s;
+}
+
+.nav-links li a:hover{
+    color: #24252A;
+}
+button{
+    padding: 9px  25px;
+    background-color: rgba(0, 136, 169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 30px;
+}
+
+button:hover{
+    background-color: rgba(53, 113, 128,0.8);
+}
+/*------------------------------------------------------------SECCION CONTACTANOS------------------------------------------------------------*/
+.contactanos{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+.contactanos .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.contactanos .title h2{
+    color: #fff;
+    font-size: 500;
+}
+
+.form{
+    grid-area: form;
+}
+.info{
+   grid-area: info;
+}
+.map{
+   grid-area: map;
+}
+.contact{
+    padding: 40px;
+    background: #fff;
+}
+.box{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: "form info" "form map";
+    grid-gap: 20px;
+}
+
+.contact h3{
+    color: #125C7D;
+}
+
+
+/*--------------------------------------------------------FORMULARIO--------------------------------------------------------*/
+ .formBox{
+     position: relative;
+     width: 100%;
+ }
+
+ .formBox .row50{
+     display: flex;
+     gap: 20px;
+ }
+
+ .inputBox{
+     display: flex;
+     flex-direction: column;
+     margin-bottom: 10px;
+     width: 50%;
+ }
+
+ .formBox .row100 .inputBox{
+    width: 100%;
+ }
+ .inputBox span{
+     color:rgb(48, 51, 92) ;
+     margin-top: 5px;
+     margin-bottom: 5px;
+     font-weight: 500;
+ }
+
+ .inputBox input{
+    padding: 10px;
+    font-size: 1em;
+    outline: none;
+    border: 1px solid #3333;
+ }
+ .inputBox textarea{
+     padding: 10px;
+     font-size: 1.1em;
+     outline: none;
+     border-radius: 1px solid #333;
+     resize: none;
+     min-height: 180px;
+     margin-bottom: 10px;
+ }
+ .inputBox input[type="submit"]
+ {
+     color:#fff;
+     background: #125C7D;
+     border: none;
+     font-size: 1.1em;
+     max-width: 120px;
+     font-weight: 500;
+     cursor: pointer;
+     padding: 14px 15px;
+ }
+
+ .inputBox::placeholder{
+     color: #999;
+ }

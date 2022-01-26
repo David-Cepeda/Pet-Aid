@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+}
+
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 5%;
+}
+
+.logo{
+    cursor: pointer;
+    max-width: 55px;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav-links{
+    list-style: none;    
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.nav-links li a{
+    transition:  all 0.3s ease 0s;
+}
+
+.nav-links li a:hover{
+    color: #034a5c;
+}
+
+button{
+    padding: 9px  25px;
+    background-color: rgba(0, 136, 169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 30px;
+}
+
+button:hover{
+    background-color: rgba(53, 113, 128,0.8);
+}
+/*----------------------------------------------------BUTTON SEARCH - DOG AND CAT----------------------------------------------------*/
+h1{
+    margin: 430px 140px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.1;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.circulo1{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: #FF5757;
+    position: absolute;
+    margin: auto;
+    left: 600px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.circulo1 img{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+.circulo2{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: #FFBD59;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 600px;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.circulo2 img{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    margin: auto;
+    left: 20px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+}
